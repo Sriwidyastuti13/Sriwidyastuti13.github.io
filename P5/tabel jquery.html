@@ -1,0 +1,150 @@
+<h1>The Top 5 of My Best Friend</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+	body {
+		font-family: "Times New Roman";
+		font-size: 100pxpx;
+		background-color: mediumpurple;
+	
+	}
+
+	tr {
+		background: white;
+		padding: 3px solid;
+		text-align: center;
+	}
+
+	td {
+		background: lightskyblue;
+		cursor: pointer;
+		transition: .3s;
+		padding: 3px solid;
+		text-align: center;
+
+	}
+
+	td:hover {
+		background: white;
+
+	}
+
+	.tabelku{
+		width: 100%;
+		max-width: 500px;
+		margin: auto;
+
+	}
+
+
+</style>
+
+<center>
+
+<table class="tabelku">
+	<tr>
+		<td>No</td>
+		<td>Nama</td>
+		<td>Alamat</td>
+		<td>Aksi</td>
+
+	</tr>
+
+<tr>
+	    <td>1</td>
+		<td class="nama_mhs">Adelia puspita dewi</td>
+		<td>Pilangsari</td>
+		<td class="delete">Delete</td>
+
+</tr>
+
+<tr>
+		<td>2</td>
+		<td class="nama_mhs">Bianca rumaisya</td>
+		<td>Karangampel</td>
+		<td class="delete">Delete</td>
+
+	</tr>
+
+	<tr>
+		<td>3</td>
+		<td class="nama_mhs">Cecilya saputri</td>
+		<td>Bogor</td>
+		<td class="delete">Delete</td>
+
+	</tr>
+
+<tr>
+		<td>4</td>
+		<td class="nama_mhs">Chytia maurel</td>
+		<td>Bekasi</td>
+		<td class="delete">Delete</td>
+
+	</tr>
+
+<tr>
+		<td>5</td>
+		<td class="nama_mhs">Qilla syafira</td>
+		<td>Jakarta selatan</td>
+		<td class="delete">Delete</td>
+
+	</tr>
+
+<script>
+  $(document).ready(function(){
+     // alert(0)
+    $('.nama_mhs').click(function(){
+      // alert(1)
+      let isi = $(this).text();
+      // alert(isi);
+      let isi2 = prompt('Apakah anda ingin mengubahnya?',isi);
+      if(!isi2) return;
+      // alert(isi2);
+
+      $(this).text(isi2);
+    })
+
+    $('.alamat').click(function(){
+     // alert(1)
+     let isi = $(this).text();
+     // alert(isi);
+     let isi2 = prompt('Apakah anda ingin mengubahnya?',isi);
+     if(!isi2) return;
+     // alert(isi2);
+
+     $(this).text(isi2);
+    })
+
+
+    $('.delete').click(function(){
+      // alert(1)
+     let cancel = confirm('Anda yakin ingin menghapusnya?');
+     if(!cancel) return;
+
+     let id = $(this).prop('id');
+     // alert(id);
+
+
+     let rid= id.split('__');
+     let baris_ke = rid[1];
+
+     // alert(baris_ke);
+
+     $('#row__'+baris_ke).slideUp()
+
+
+
+     // alert('Anda yakin')
+
+
+    })
+
+  })
+
+</script>
+ </center>
+<body>
+
+</body>
+
+</html>
