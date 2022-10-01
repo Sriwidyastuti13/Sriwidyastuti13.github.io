@@ -1,0 +1,91 @@
+body {
+    background-color: cornflowerblue;
+    margin: 0;
+}
+.kertas {
+    width: 793.70px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    height: 600px;
+}
+.container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+#sekolah_1 {
+    font-size: 11px;
+    margin-top: 0px;
+}
+.stmik_head {
+    display: flex;
+}
+.stmik_ikmi {
+    line-height: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FF0000;
+    letter-spacing: 10px;
+}
+.ikmi_cirebon {
+    margin-top: 0px;
+}
+.ikmi {
+    font-size: 32px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #0000FF;
+    letter-spacing: 7px;
+}
+.cirebon {
+    line-height: 29px;
+    font-size:18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #008800;
+}
+.alamat_surat {
+    margin-top: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.alamat_surat div {
+    letter-spacing: 2px;
+}
+.alamat_surat a {
+    color: #0000FF;
+}
+.sk_akreditasi {
+    display: flex;
+    width : 100%;
+}
+.sk {
+    background-color: #A52A2A;
+    width: 55%;
+    text-align: center;
+    color: white;
+    padding: 2px 0px;
+}
+.akreditasi {
+    width: 45%;
+    background-color: #008000;
+    text-align: center;
+    color: white;
+    padding: 2px 0px;
+}
+.surat_tugas {
+    text-align: center;
+    margin-top: 20px;
+}
+.surat {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 22px;
+}
